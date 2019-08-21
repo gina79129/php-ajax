@@ -1,0 +1,21 @@
+{
+    "name": "書店資訊網",
+    "short_name": "書店資訊網",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#E0FFFF",
+    "theme_color": "#FFC1C1",
+    "icons": [{
+        "src": "./img/book192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }, {
+        "src": "./img/book512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }]
+    
+   
+  
+    
+  } 

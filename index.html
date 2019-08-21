@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant-TW" style="overflow:hidden">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>書店資訊網</title>
+
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+  <!-- 網站META -->
+  <meta name="keywords" content="獨立書店、網路書店、書局、二手書">
+  <meta name="description" content="書店資訊網">
+  <meta name="author" content="泰山網頁設計班-葉珏汝">
+
+  <!-- META facebook引用打法 -->
+  <meta property="og:title" content="書店資訊網">
+  <meta property="og:image" content="./img/bgImg.jpg">
+  <meta property="og:site_name" content="書店資訊">
+  <meta property="og:description" content="書店資訊網">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- css -->
+  <!-- <link rel="stylesheet" href="Content/bootstrap.css"> -->
+  <!-- <link rel="stylesheet" href="Content/bootstrap-grid.css"> -->
+  <!-- <link rel="stylesheet" href="Content/font-awesome.css"> -->
+  <!-- <link rel="stylesheet" href="Content/Site.css"> -->
+  <!-- <link rel="stylesheet" href="Content/font-google.css"> -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/Site.css">
+  <link rel="stylesheet" href="./css/font-google.css">
+  <link rel="stylesheet" href="./css/animate.css">
+  
+  <!-- mycss -->
+  <link  rel="stylesheet" href="./css/mycss.css">
+
+
+</head>
+
+<body id="page-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html" id="tit">書店資訊網</a>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger red" href="store.html">獨立書店</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="opchartest.php">獨立書店分布圖</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger yellow" href="library.html">網路書店</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger green" href="contact.html">聯絡我們</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+    
+  <div style="background-color: transparent;height: 8vh;">
+  </div>
+  <div style="height: 80vh; width: 100vw; display: table-cell; vertical-align: middle; text-align:center;">
+
+    <div class="row">
+      
+      <div class="col-12 tada wow">
+        <h1 class="mx-auto my-0 text-uppercase"
+          style="font-size: 5rem;font-style: italic;color:white;">
+          <img src="./heart.svg" width="100px">書店資訊網<img src="./heart.svg" width="100px">
+        </h1>
+      </div>
+
+      <div class="col-12" style="padding-top:25px;">
+        <a href="store.html" class="btn btn-warning js-scroll-trigger go">繼續閱讀<img src="./right.svg" style="width:30px;"></a>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Copyright &copy;泰山網頁設計班 2019
+    </div>
+  </footer>
+
+  
+<!-- js -->
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/wow.min.js"></script>
+
+<script>
+$(document).on("readystatechange",function(){
+  if(document.readyState == "complete"){
+    
+          new WOW().init();
+
+  }
+})
+</script>
+
+
+</body>
+
+</html>

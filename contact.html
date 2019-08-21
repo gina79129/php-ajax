@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <title>書店資訊網</title>
+
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    <!-- 網站META -->
+    <meta name="keywords" content="獨立書店、網路書店、書局、二手書">
+    <meta name="description" content="書店資訊網">
+    <meta name="author" content="泰山網頁設計班-葉珏汝">
+
+    <!-- META facebook引用打法 -->
+    <meta property="og:title" content="書店資訊網">
+    <meta property="og:image" content="./img/bgImg.jpg">
+    <meta property="og:site_name" content="書店資訊">
+    <meta property="og:description" content="書店資訊網">
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/Site.css">
+    <link rel="stylesheet" href="./css/font-google.css">
+    <link rel="stylesheet" href="./css/animate.css">
+
+    <!-- mycss -->
+    <link rel="stylesheet" href="./css/mycss.css">
+
+
+    <style>
+        .aStyle:hover {
+            color: blue !important;
+        }
+    </style>
+</head>
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html" id="tit">書店資訊網</a>
+            <button class="navbar-toggler navbar-toggler-right menuIcon" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                選單
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="store.html">獨立書店</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="opchartest.php">獨立書店分布圖</a>
+                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="library.html">網路書店</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="contact.html">聯絡我們</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="page">
+        <div class="container-fluid" id="loading">
+            <div class="row h-100">
+                <div class="col-12 text-center align-self-center">
+                    <img src="./img/book.svg" width="300" height="300">
+                    <p class="text-white">載入中...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: transparent;height: 8vh;">
+    </div>
+    <div class="col3scroll" style="height: 80vh; width: 100vw; display: table-cell; vertical-align: middle; text-align:center;overflow:hidden;">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 ">
+                <a class="aStyle " href="tel:0800000000">
+                    <div class="card border-0 data3COL">
+                        <div class="card-body text-center sm">
+                            <i class="fa fa-phone fa-5x mb-3" aria-hidden="true"></i>
+                            <h4 class="text-uppercase mb-5">聯絡我們</h4>
+                            <p>0800-000-000</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 ">
+                <a class="aStyle " href="https://www.google.com/maps/place/新北市泰山區泰山職訓中心" target="_blank">
+                    <div class="card border-0 data3COL">
+                        <div class="card-body text-center sm">
+                            <i class="fa fa-map-marker fa-5x mb-3" aria-hidden="true"></i>
+                            <h4 class="text-uppercase mb-5">公司位置</h4>
+                            <ad dress>泰山職訓中心</address>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <a class="aStyle " href="mailto:Test123@google.com?subject=聯絡我們">
+                    <div class="card border-0 data3COL">
+                        <div class="card-body text-center sm">
+                            <i class="fa fa-envelope fa-5x mb-3" aria-hidden="true"></i>
+                            <h4 class="text-uppercase mb-5">Email</h4>
+                            <p>Test123@google.com</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black small text-center text-white-50">
+        <div class="container">
+                Copyright &copy;泰山網頁設計班 2019
+        </div>
+    </footer>
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        $(document).on("readystatechange", function () {
+            if (document.readyState == "complete") {
+                $("#loading").fadeOut(2000, function () {
+                    $("#content").fadeIn(3000);
+                    $("#footer").fadeIn(3000);
+                    new WOW().init();
+                });
+
+            }
+        })
+    </script>
+</body>
+</html>

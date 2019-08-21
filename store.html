@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant-TW" style="overflow:hidden">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>書店資訊網</title>
+
+    <!-- favicon  -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+  <!-- 網站META -->
+  <meta name="keywords" content="獨立書店、網路書店、書局、二手書">
+  <meta name="description" content="書店資訊網">
+  <meta name="author" content="泰山網頁設計班-葉珏汝">
+
+  <!-- META facebook引用打法 -->
+  <meta property="og:title" content="書店資訊網">
+  <meta property="og:image" content="./img/bgImg.jpg">
+  <meta property="og:site_name" content="書店資訊">
+  <meta property="og:description" content="書店資訊網">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/Site.css">
+    <link rel="stylesheet" href="./css/font-google.css">
+    <link rel="stylesheet" href="./css/animate.css">
+
+  <!-- mycss -->
+  <link  rel="stylesheet" href="./css/mycss.css">
+
+  
+    <style>
+        .ObjHidened {
+        display:none!important;
+        }
+    </style>
+
+  
+</head>
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html" id="tit">書店資訊網</a>
+            <button class="navbar-toggler navbar-toggler-right menuIcon" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                選單 
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="store.html">獨立書店</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="opchartest.php">獨立書店分布圖</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="library.html">網路書店</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="contact.html">聯絡我們</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="page">
+        <div class="container-fluid" id="loading">
+            <div class="row h-100">
+                <div class="col-12 text-center align-self-center">
+                    <img src="./img/book.svg" width="300" height="300">
+                    <p class="text-white">載入中...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: transparent;height: 8vh;">
+    </div>
+    <div style="height: 80vh; width: 100vw; display: table-cell; vertical-align: middle; text-align:center;padding:1rem;" id="content">
+        <div class="row">
+            <div class="hidden-sm  col-md-4 col-lg-4 ">
+                <div class="list-group main" id='lsData'>
+                </div>
+            </div>
+
+            <div class="show-sm  col-md-4 col-lg-4 " style="border-radius:2rem;background-color:white;margin:1rem;">
+                <div>
+                    <select style="min-width: 100%; border-width: 0px;" id="selectStore" onchange="showData(this.value);">
+                         
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-8">
+                <div style="background-color:rgba(255,255,255,0.6);padding: 1rem;border-radius: 1rem;overflow:hidden;">
+                    <div class="row" style=" padding: 1rem;">
+                        <div class="show-sm col-sm-12" style="text-align:left;">
+                            <h3 id="lbTitle" style="font-weight:bold;text-align:center;">
+                                女書店
+                            </h3>
+                            <div class="row">
+                                <div class="col-5">
+                                    <img style="width:10rem;height:10rem;border-radius:10%;box-shadow:5px 5px 5px #262525;box-sizing:border-box;" id="showImg2">
+                                </div>
+                                <div class="col-7">
+                                    <label id="lbTime2" style=" margin-top: 2rem; ">營業時間：每日10:30~22:00，除夕～初四公休</label><br />
+                                    <label id="lbPhone2">聯絡電話：博雅館: +886 2 2363 6358、人文館: +886 2 2367 1797</label><br />
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label id="lbAddr2">店家地址：臺北市中正區羅斯福路3段244巷17號及23號</label><br />
+                                    <label id="lbGo2">前往方式：公館捷運站四號出口，直行，由後方316巷進入；公車可搭1、208、236、251、252、253、278、311、530、606、644、660、671、672、673、74、棕12、綠11、藍28至「台電大樓站」下車，下車步行約225公尺後到達目的地。</label>
+                                </div>
+                            </div> 
+                        </div> 
+                        <div class="hidden-sm col-sm-12" style="text-align:left;">
+                            <h3 id="lbTitle2" style="font-weight:bold;text-align:center;">
+                                女書店
+                            </h3>
+                            <div style="float:left;"><img style="width:280px;height:280px;border-radius:10%;box-shadow:5px 5px 5px #262525;box-sizing:border-box;" id="showImg"></div>
+                            <div style="float:left;width:35vw;padding:0 10px;"><label id="lbTime" style=" margin-top: 2rem; ">營業時間：每日10:30~22:00，除夕～初四公休</label><br />
+                            <label id="lbPhone">聯絡電話：博雅館: +886 2 2363 6358、人文館: +886 2 2367 1797</label><br />
+                            <label id="lbAddr">店家地址：臺北市中正區羅斯福路3段244巷17號及23號</label><br />
+                            <label id="lbGo">前往方式：公館捷運站四號出口，直行，由後方316巷進入；公車可搭1、208、236、251、252、253、278、311、530、606、644、660、671、672、673、74、棕12、綠11、藍28至「台電大樓站」下車，下車步行約225公尺後到達目的地。</label>
+                            <label id="lbfb"><a href=""></a></label>
+                            <label id="lbweb">前往方式：公館捷運站四號出口，直行，由後方316巷進入；公車可搭1、208、236、251、252、253、278、311、530、606、644、660、671、672、673、74、棕12、綠11、藍28至「台電大樓站」下車，下車步行約225公尺後到達目的地。</label>
+                            <label id="lbemail">前往方式：公館捷運站四號出口，直行，由後方316巷進入；公車可搭1、208、236、251、252、253、278、311、530、606、644、660、671、672、673、74、棕12、綠11、藍28至「台電大樓站」下車，下車步行約225公尺後到達目的地。</label></div>
+                        </div> 
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="show-sm-4 col-lg-4" id="colFB">
+                                    <a class="aStyle">
+                                        <div class="card border-0">
+                                            <div class="card-body text-center" id="btnFB">
+                                                <i class="fa fa fa-facebook-square fa-2x mb-1" aria-hidden="true" style="cursor:pointer"></i>
+                                                <h7 class=" hidden-sm text-uppercase mb-1">Facebook</h7>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="show-sm-4 col-lg-4" id="colWeb">
+                                    <a target="_blank" class="aStyle">
+                                        <div class="card border-0">
+                                            <div class="card-body text-center" id="btnWeb">
+                                                <i class="fa fa-home fa-2x mb-1" aria-hidden="true" style="cursor:pointer"></i>
+                                                <h7 class="hidden-sm  text-uppercase mb-1">官方網站</h7>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="show-sm-4 col-lg-4" id="colEmail">
+                                    <a 　target="_blank" class="aStyle">
+                                        <div class="card border-0">
+                                            <div class="card-body text-center" id="btnEmail">
+                                                <i class="fa fa-envelope fa-2x mb-1" aria-hidden="true" style="cursor:pointer"></i>
+                                                <h7 class=" hidden-sm  text-uppercase mb-1">聯絡我們</h7>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black small text-center text-white-50" id="footer">
+        <div class="container">
+                Copyright &copy;泰山網頁設計班 2019
+        </div>
+    </footer>
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $("#colFB").hide();
+            $("#colWeb").hide();
+            $("#colEmail").hide();
+
+        });
+        var objIndex = 0;
+        var list = [];
+        var showDataStr = "";
+        $.ajax({
+            type: 'GET',
+            url: "./opendata.php",
+            dataType:"JSON",
+            success: function (data) {
+                list = data;
+                for (var i = 0; i < data.length; i++) {
+               
+                    showDataStr += "<a href='javascript:showData(" + i + ")'   class='listData list-group-item list-group-item-action flex-column align-items-start'>";
+                    showDataStr += "<div class='d-flex w-100 justify-content-between '>";
+                    showDataStr += "<h5 class='mb-1 listDatah5'>" + list[i].name + "</h5>";
+                    showDataStr += "</div>";
+                    showDataStr += "<p class='mb-1'>" + list[i].cityName + list[i].address + "</p>";
+                    showDataStr += "<p class='mb-1'>" + list[i].phone + "</p>";
+                    showDataStr += "</a>";
+
+                    $('#selectStore').append($('<option>', { value: i, text: list[i].name }));
+
+                }
+                $('#lsData').html(showDataStr);
+                showData(0);
+            }
+        });
+
+      
+ 
+
+        function showData(i) {
+            console.log(i)
+            var phoneData = list[i].phone.replace('886-', '0').replace('+886-', '0') ;
+            let img=$("#showImg").attr("src","./book/"+i+".jpg"); 
+           $("#showImg2").attr("src","./book/"+i+".jpg"); 
+            $("#lbTitle").html(list[i].name);
+            $("#lbTime").html("營業時間：" + list[i].openTime);
+            $("#lbPhone").html("聯絡電話：" + phoneData);
+            $("#lbAddr").html("店家地址：" + list[i].cityName + list[i].address);
+            $("#lbGo").html("前往方式：" + list[i].arriveWay);
+
+            $("#lbTitle2").html(list[i].name);
+            $("#lbTime2").html("營業時間：" + list[i].openTime);
+            $("#lbPhone2").html("聯絡電話：" + phoneData);
+            $("#lbAddr2").html("店家地址：" + list[i].cityName + list[i].address);
+            $("#lbGo2").html("前往方式：" + list[i].arriveWay);
+            var strings="";
+            $("#btnFB").click(function () {
+                if (strings.replace(list[i].facebook.indexOf('https').length) < 0 ) {
+    
+                    alert('暫無提供Facebook');
+					return false;
+                    strings.remove();
+                } else {
+				window.open(list[i].facebook, 'facebook' ); 
+					return false;
+                    strings.remove();
+                }
+            });
+          
+            $("#btnWeb").click(function () {
+                if (strings.replace(list[i].website.indexOf('http').length) < 0) {
+
+                    alert('暫無提供官方網站');
+					return false;
+                    strings.remove();
+                } else {
+                    // if(list[i].website.indexOf('http') > 0){
+				    window.open(list[i].website, 'website' );  
+                    // }
+					return false;
+                    strings.remove();
+                }
+              
+            }); 
+            $("#btnEmail").click(function () {
+                if (list[i].email.indexOf('@') < 0) {
+                    alert('暫無提供Email聯繫');
+					return false;
+                } else {
+                    window.location.href = 'mailto:' + list[i].email + '?subject=聯絡我們';
+					return false;
+                }
+            });
+        }
+
+     
+        $(document).on("readystatechange",function(){
+            if(document.readyState == "complete"){
+                $("#loading").fadeOut(2000,function(){
+                $("#content").fadeIn(3000);
+                 $("#footer").fadeIn(3000);
+                    new WOW().init();
+                });
+    
+            }
+        })
+       </script>
+</body>
+</html> 
