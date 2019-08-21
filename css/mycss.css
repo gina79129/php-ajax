@@ -1,0 +1,292 @@
+﻿
+body {
+    background: linear-gradient(to bottom,rgba(22,22,22,.3) 0,rgba(22,22,22,.7) 75%,#161616 100%),url(../img/bgImg.jpg);
+    -moz-background-size: 100vw 100vh;
+    -webkit-background-size: 100vw 100vh;
+    -o-background-size: 100vw 100vh;
+    background-size: 100vw 100vh;
+    color: #333;
+    font-size: .85em;
+    font-family: "微軟正黑體";
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+a {
+    color: #999999 !important;
+    font-weight: bold !important;
+    outline: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-decoration: none !important;
+}
+
+    a:hover {
+        color: #f9f9f9 !important;
+        font-size: 16px;
+    }
+
+#tit {
+    color: #999999 !important;
+    font-weight: bold !important;
+    outline: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-decoration: none !important;
+    font-size: 24px;
+}
+
+    #tit:hover {
+        color: #f9f9f9 !important;
+        text-shadow: rgba(255, 255, 255, 0.822) 0.2em 0.2em 0.8em;
+    }
+
+.go {
+    color: black !important;
+    text-shadow: rgba(255, 255, 255, 0.822) 0.2em 0.2em 0.8em;
+    font-size: 18px;
+}
+
+    .go:hover {
+        color: rgb(0, 0, 0) !important;
+        text-shadow: rgba(255, 255, 255, 0.822) 0.2em 0.2em 0.8em;
+        font-size: 20px;
+    }
+
+footer {
+    position: absolute !important;
+    right: 0;
+    bottom: 0 !important;
+    left: 0;
+    padding: 1rem;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    height: 3vh !important;
+}
+
+.listImg {
+    margin: 1rem auto 0rem auto;
+}
+
+@media (min-width: 0px) {
+    html {
+        overflow-y: auto;
+    }
+
+    .hidden-sm {
+        display: none !important;
+    }
+
+    .show-sm {
+        display: block !important;
+    }
+
+    .show-sm-4 {
+        display: block !important;
+        width: 33% !important;
+    }
+
+    .show-sm-12 {
+        display: block !important;
+        width: 80% !important;
+        margin: 1rem auto 0rem auto;
+    }
+
+    .data3COL {
+        display: flex;
+        margin: 1.5rem;
+        background-color: #f7f7f7c7;
+    }
+
+    .col3scroll {
+        overflow-y: auto !important;
+        max-height: 80vh !important;
+        display: block !important;
+    }
+}
+
+@media (min-width: 576px) {
+    html {
+        overflow-y: auto;
+    }
+
+    .hidden-sm {
+        display: none !important;
+    }
+
+    .show-sm {
+        display: block !important;
+    }
+
+    .show-sm-4 {
+        display: block !important;
+        width: 33% !important;
+    }
+
+    .show-sm-12 {
+        display: block !important;
+        width: 80% !important;
+        margin: 1rem auto 0rem auto;
+    }
+
+    .data3COL {
+        display: flex;
+        margin: 1.5rem;
+        background-color: #f7f7f7c7;
+    }
+
+    .col3scroll {
+        overflow-y: auto !important;
+        max-height: 80vh !important;
+        display: block !important;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        overflow-y: hidden;
+    }
+
+    .hidden-sm {
+        display: block !important;
+    }
+
+    .show-sm {
+        display: none !important;
+    }
+
+    .show-sm-12 {
+        display: none !important;
+    }
+
+    .data3COL {
+        display: flex;
+    }
+
+    .col3scroll {
+        display: table-cell;
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        overflow-y: hidden;
+    }
+
+    .hidden-sm {
+        display: block !important;
+    }
+
+    .show-sm {
+        display: none !important;
+    }
+
+    .show-sm-12 {
+        display: none !important;
+    }
+
+    .data3COL {
+        display: block;
+    }
+
+    .col3scroll {
+        display: table-cell;
+    }
+}
+
+.fixed-top {
+    padding-top: 30px;
+}
+
+#loading {
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1029;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/bgImg.jpg);
+    /* background-position:center;
+            background-attachment:fixed;
+            background-size:cover; */
+    -moz-background-size: 100vw 100vh;
+    -webkit-background-size: 100vw 100vh;
+    -o-background-size: 100vw 100vh;
+    background-size: 100vw 100vh;
+    color: #333;
+    font-size: .85em;
+    font-family: "微軟正黑體";
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+.main {
+    flex: 1 1 0;
+    /* flex: 1, which you had before, is equivalent but doesn't work */
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    max-height: 72vh;
+}
+
+label {
+    display: inline-block !important;
+    margin-bottom: .1rem !important;
+}
+
+.listData:hover {
+    color: black;
+    background-color: #808080;
+}
+
+.listDatah5 {
+    font-weight: bold;
+}
+
+#lbTitle, #lbTitle2 {
+    font-size: 2rem;
+    text-align: left;
+}
+
+label {
+    margin: 0.5rem;
+}
+
+.aStyle:hover {
+    color: blue !important;
+}
+
+.btn-warning {
+    background-color: #ffc10791;
+    border-color: #ffc107;
+}
+
+.card-body {
+    padding: 5px;
+}
+
+.show {
+    background-color: #324b6f;
+    padding: 0.5rem !important;
+    border-radius: 0.5rem;
+}
+
+.menuIcon {
+    color: #999999 !important;
+    font-weight: bold !important;
+    outline: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-decoration: none !important;
+    font-size: 24px;
+    border: solid !important;
+}
+
+.sm{
+    height:200px;
+}
